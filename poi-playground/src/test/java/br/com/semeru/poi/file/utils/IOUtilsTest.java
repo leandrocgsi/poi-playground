@@ -14,7 +14,7 @@ public class IOUtilsTest {
     @Before
     public void setup() {
 		byteArray = s.getBytes();
-		path = "C:/Users/LEANDRO/Desktop/";
+		path = System.getProperty("user.dir") + "\\target\\";
 		fileName = "WriterTest.txt";
     }
 	
