@@ -28,7 +28,7 @@ public class ExporterTest {
 	@Test
 	public void exportTestWithDocumentStructure() {
 		ByteArrayOutputStream byteArrayOutputStream = exporter.export(documentStructure);
-        ioUtils.fileWriter(byteArrayOutputStream.toByteArray(), "C:/Users/LEANDRO/Desktop/", "MyFirstXLSXWithPOIAndDocumentStructure.xlsx");
+        ioUtils.fileWriter(byteArrayOutputStream.toByteArray(), System.getProperty("user.dir") + "\\target\\", "MyFirstXLSXWithPOIAndDocumentStructure.xlsx");
 	}
 	
 	private LinkedHashMap<String, String> getHeaderColumns(){
